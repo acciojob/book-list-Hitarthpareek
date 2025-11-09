@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 	<link rel="stylesheet" href="styles.css">
+		<style> 
+		body{padding-top:30px;}
+		label,input{display:block;} 
+	</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<h1>MyBookList</h1>
+	<div class="form-group">
+	<form action="" method="post" id="MyForm">
+	<label for="radius">Title</label>
+		<input type="text"id="title" required>
+	<label>Author</label>
+		<input type="text" id="author">
+	<label>ISBN#</label>
+		<input type="text" id="isbn">
+	<input type="submit" value="Submit" id="submit" style="background-color:lightblue">   </form>
+	</div>
 
+<table class="table table-striped">
+  <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>ISBN#</th>
+      </tr>
+    </thead>
+	
+	<tbody id="book-list">
+      <!-- Books will be added here dynamically -->
+    </tbody>
+
+</table>
+
+	<script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
