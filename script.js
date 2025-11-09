@@ -1,6 +1,4 @@
-const books = [
-  { title: "The", author: "Coelho", isbn: "22415" },
-];
+const books = [];
 
 const bookList = document.getElementById("book-list");
 const title = document.getElementById("title");
